@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Person from './Person/Person';
+import Task from './Task/Task';
 
 class App extends Component {
   state={
@@ -31,7 +32,8 @@ number2Handler=(event)=>{
 
      return (
        <div className="App">
-        <h1>hello</h1>
+       <Task></Task>
+        {/* <h1>hello</h1>
         <input type="text" value={this.state.number1} onChange={this.number1Handler}/>
         <input type="text" value={this.state.number2} onChange={this.number2Handler}/>
         <button onClick={this.helloWorldHandler}>click me</button>
@@ -39,7 +41,7 @@ number2Handler=(event)=>{
         {this.state.answer!=0?<p>{this.state.answer}</p>:null}
         <Person name="shreeja" age="22"  >
           dgghj
-        </Person>
+        </Person> */}
       </div>
      );
    // return React.createElement('div',null,React.createElement('h1',null,'hello'))
